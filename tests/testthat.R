@@ -2,4 +2,4 @@ library(testthat)
 library(testthatJunitRporterTest)
 
 test_check("testthatJunitRporterTest",
-           reporter = JunitReporter$new(file = "junit/result.xml"))
+           reporter = JunitReporter$new(file = "junit_result.xml"))
