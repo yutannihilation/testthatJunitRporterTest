@@ -43,6 +43,9 @@ defaults: &steps
     - run:
         command: mv ${RCHECK_DIR} /tmp/Rcheck
         when: always
+    - store_test_results:
+        path: /tmp/Rcheck
+        when: always
     - store_artifacts:
         path: /tmp/Rcheck
         when: always
