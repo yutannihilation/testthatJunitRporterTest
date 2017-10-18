@@ -44,7 +44,7 @@ defaults: &steps
         command: mv ${RCHECK_DIR} /tmp/Rcheck
         when: always
     - store_test_results:
-        path: /tmp/Rcheck/tests/junit_result.xml
+        path: /tmp/Rcheck/tests/
         when: always
     - store_artifacts:
         path: /tmp/Rcheck
