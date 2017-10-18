@@ -12,3 +12,4 @@ LazyData: true
 Suggests: testthat
 Remotes:
   r-lib/testthat
+RoxygenNote: 6.0.1.9000
