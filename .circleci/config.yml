@@ -49,16 +49,14 @@ defaults: &steps
 
 version: 2
 jobs:
-   "r-release":
+  "r-release":
      docker:
        - image: rocker/tidyverse:latest
-
      <<: *steps
 
-   "r-devel":
+  "r-devel":
      docker:
        - image: rocker/tidyverse:devel
-
      <<: *steps
 
 workflows:
